@@ -1,0 +1,52 @@
+.head{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.headleft ul {
+    text-align: center;
+    list-style-type: none;
+     
+}
+.headleft li {
+    display: flex;
+    display: inline;
+    margin-left: 30px;
+     
+}
+.headright ul{
+    text-align: center;
+    list-style-type: none;
+}
+.headright li{
+    display: flex;
+    display: inline;
+    margin-left: 30px;
+}
+.header-input{
+    border-radius: 15px;
+    border: 1px solid black;
+    height: 30px;
+    margin-top: 12px;
+} 
+.foot{
+   
+    display: flex;
+}
+.foot ul{
+    list-style-type: none;
+}
+.navbar{
+  position: relative;
+  right: 170px;
+
+}
+.footer-icons{
+    list-style-type: none;
+    margin-left:30px;
+}
+.footer-icons li{
+    display: inline;
+}

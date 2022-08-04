@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>creating mailing system</title>
+	<style>
+		legend {
+			display: block;
+			padding-left: 2px;
+			padding-right: 2px;
+			border: none;
+		}
+	</style>
+	<script type="text/javascript">
+		function validate() {
+
+			var user = document.getElementById("e").value;
+			var user2 = document.getElementById("e");
+			var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            var userTwo = document.getElementById("b").value;
+			var userThree = document.getElementById("b");
+            var res=  /^[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+			if (re.test(user)) {
+				alert("done");
+				return true;
+			}
+            if (res.test(userTwo)) {
+				alert("done");
+				return true;
+            }
+			else {
+				user2.style.border = "red solid 3px";
+                userThree.style.border="red solid 3px"
+				return false;
+			}
+		}
+	</script>
+</head>
+
+<body background-color="cyan">
+	<div>
+    ;
+		<h1>Email Registration</h1>
+		<form>
+			<fieldset style="width:300px">
+				<legend>Registation Form</legend>
+				<table>
+					
+					<tr>
+						<input type="email"
+							placeholder="username@gmail.com" id="e">
+					</tr>
+					<br><br>
+					<tr>
+						<input type="password" placeholder="password" id="b">
+					</tr>
+					<br><br>
+					
+					<br><br>
+					<tr><input type="submit"
+						onclick="validate()" value="create">
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+	
+    </div>
+
+</body>
+
+</html>
